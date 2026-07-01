@@ -270,7 +270,18 @@ function initParallax() {
   const MAX_OFFSET = 15;
   let ticking = false;
 
+  function isMobile() {
+    return window.matchMedia('(max-width: 767px)').matches ||
+           ('ontouchstart' in window && window.innerWidth < 1024);
+  }
+
   function applyParallax() {
+    // Desactivar en móvil: evita el espacio en blanco por el cambio de viewport
+    if (isMobile()) {
+      heroBg.style.transform = '';
+      ticking = false;
+      return;
+    }
     const scrollY = window.scrollY;
     const heroHeight = heroBg.parentElement.offsetHeight;
     if (scrollY < heroHeight) {
@@ -285,6 +296,11 @@ function initParallax() {
       requestAnimationFrame(applyParallax);
       ticking = true;
     }
+  }, { passive: true });
+
+  // Limpiar transform al cambiar tamaño (ej. rotar pantalla)
+  window.addEventListener('resize', () => {
+    if (isMobile()) heroBg.style.transform = '';
   }, { passive: true });
 }
 

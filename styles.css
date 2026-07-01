@@ -478,7 +478,9 @@ h1, h2, h3, h4 {
 ══════════════════════════════════════════════════════════ */
 .hero {
   position: relative;
-  height: 100vh;
+  /* dvh = dynamic viewport height: se ajusta cuando la barra del navegador móvil aparece/desaparece */
+  height: 100dvh;
+  height: 100vh; /* fallback para navegadores sin dvh */
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -486,14 +488,19 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
+/* Soporte nativo dvh donde esté disponible */
+@supports (height: 100dvh) {
+  .hero { height: 100dvh; }
+}
+
 .hero-bg {
   position: absolute;
-  inset: -20px;
+  inset: 0;
   background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&q=85&auto=format&fit=crop');
   background-size: cover;
   background-position: center 30%;
   will-change: transform;
-  transition: transform 0.1s linear;
+  /* Sin transition en scroll para evitar lag visual en móvil */
 }
 
 .hero-overlay {
