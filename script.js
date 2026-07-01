@@ -276,6 +276,8 @@ function initScrollReveal() {
   const revealEls = document.querySelectorAll('.reveal');
   const titleLines = document.querySelectorAll('.title-line');
 
+  // rootMargin positivo: dispara 120px ANTES de que el elemento entre en pantalla
+  // así el contenido ya está visible cuando el usuario llega a la sección
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -284,8 +286,8 @@ function initScrollReveal() {
       }
     });
   }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.01,
+    rootMargin: '0px 0px 120px 0px',
   });
 
   const lineObserver = new IntersectionObserver(entries => {
@@ -296,7 +298,8 @@ function initScrollReveal() {
       }
     });
   }, {
-    threshold: 0.5,
+    threshold: 0.1,
+    rootMargin: '0px 0px 80px 0px',
   });
 
   revealEls.forEach(el => observer.observe(el));
