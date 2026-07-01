@@ -264,44 +264,9 @@ function initMobileNav() {
    PARALLAX HERO
 ══════════════════════════════════════════════════════════ */
 function initParallax() {
-  const heroBg = document.getElementById('heroBg');
-  if (!heroBg) return;
-
-  const MAX_OFFSET = 15;
-  let ticking = false;
-
-  function isMobile() {
-    return window.matchMedia('(max-width: 767px)').matches ||
-           ('ontouchstart' in window && window.innerWidth < 1024);
-  }
-
-  function applyParallax() {
-    // Desactivar en móvil: evita el espacio en blanco por el cambio de viewport
-    if (isMobile()) {
-      heroBg.style.transform = '';
-      ticking = false;
-      return;
-    }
-    const scrollY = window.scrollY;
-    const heroHeight = heroBg.parentElement.offsetHeight;
-    if (scrollY < heroHeight) {
-      const ratio = scrollY / heroHeight;
-      heroBg.style.transform = `translateY(${ratio * MAX_OFFSET}px)`;
-    }
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(applyParallax);
-      ticking = true;
-    }
-  }, { passive: true });
-
-  // Limpiar transform al cambiar tamaño (ej. rotar pantalla)
-  window.addEventListener('resize', () => {
-    if (isMobile()) heroBg.style.transform = '';
-  }, { passive: true });
+  // Parallax eliminado: la imagen está como background-image CSS de .hero,
+  // lo que es nativo del navegador y no causa problemas de scroll en móvil.
+  // En escritorio podría añadirse background-attachment:fixed, pero afecta rendimiento.
 }
 
 /* ══════════════════════════════════════════════════════════

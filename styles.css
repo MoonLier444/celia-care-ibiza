@@ -478,28 +478,18 @@ h1, h2, h3, h4 {
 ══════════════════════════════════════════════════════════ */
 .hero {
   position: relative;
-  /* Fondo oscuro de fallback: visible inmediatamente aunque la imagen tarde en cargar */
+  /* Imagen y color de fallback directamente en la sección — sin divs hijos absolutos */
   background-color: #2D2318;
-  height: 100svh; /* small viewport height - no se mueve con la barra del navegador */
-  height: 100vh;  /* fallback */
-  min-height: 600px;
+  background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center 30%;
+  /* Altura: min-height para que el contenido siempre quepa,
+     sin forzar 100vh que en móvil puede ser mayor que la pantalla visible */
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-
-@supports (height: 100svh) {
-  .hero { height: 100svh; }
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&q=85&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center 30%;
-  /* Sin will-change: evita bug de capa de composición en iOS Safari */
 }
 
 .hero-overlay {
@@ -507,9 +497,9 @@ h1, h2, h3, h4 {
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(45,35,24,0.55) 0%,
-    rgba(139,74,53,0.25) 50%,
-    rgba(45,35,24,0.65) 100%
+    rgba(45,35,24,0.60) 0%,
+    rgba(139,74,53,0.28) 50%,
+    rgba(45,35,24,0.70) 100%
   );
   z-index: 1;
 }
