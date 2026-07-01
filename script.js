@@ -623,13 +623,14 @@ function initSmoothScroll() {
 
 /* ══════════════════════════════════════════════════════════
    HERO CONTENT STAGGER (initial load)
+   La animación principal la hace CSS. JS sólo marca .visible
+   para que el IntersectionObserver no la vuelva a animar.
 ══════════════════════════════════════════════════════════ */
 function initHeroReveal() {
   const heroEls = document.querySelectorAll('.hero .reveal');
-  heroEls.forEach((el, i) => {
-    setTimeout(() => {
-      el.classList.add('visible');
-    }, 300 + i * 160);
+  heroEls.forEach(el => {
+    // Marcar como visible inmediatamente — la animación ya la gestiona CSS
+    el.classList.add('visible');
   });
 }
 
