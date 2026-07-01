@@ -3,29 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- SEO -->
-  <title>Celia Care Ibiza · Wellness &amp; Massage Sanctuary in Sant Antoni</title>
-  <meta name="description" content="Premium wellness centre in Sant Antoni de Portmany, Ibiza. Therapeutic massage, facial rituals, physiotherapy &amp; holistic wellbeing. Rated ★5.0. Book in minutes on Fresha." />
-  <meta name="keywords" content="massage ibiza, wellness ibiza, spa sant antoni, facial ibiza, physiotherapy ibiza, holistic ibiza, celia care ibiza" />
+  <title>Celia Care Ibiza · Wellness &amp; Massage in Sant Antoni</title>
+  <meta name="description" content="Premium wellness centre in Sant Antoni de Portmany, Ibiza. Therapeutic massage, facial rituals, physiotherapy &amp; holistic wellbeing. ★5.0 on Fresha." />
   <link rel="canonical" href="https://celiacareibiza.com/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Celia Care Ibiza · Wellness &amp; Massage Sanctuary" />
-  <meta property="og:description" content="Premium wellness centre in Sant Antoni de Portmany, Ibiza. Therapeutic massage, facial rituals, physiotherapy &amp; holistic wellbeing." />
+  <meta property="og:description" content="Premium wellness centre in Sant Antoni de Portmany, Ibiza. ★5.0 on Fresha." />
   <meta property="og:url" content="https://celiacareibiza.com/" />
-  <meta property="og:image" content="https://celiacareibiza.com/og-image.jpg" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:site_name" content="Celia Care Ibiza" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Celia Care Ibiza · Wellness Sanctuary" />
-  <meta name="twitter:description" content="Premium wellness centre in Sant Antoni, Ibiza. ★5.0 on Fresha." />
-
-  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,19 +20,12 @@
     "name": "Celia Care Ibiza",
     "description": "Premium wellness centre offering therapeutic massage, facial rituals, physiotherapy and holistic wellbeing treatments.",
     "url": "https://celiacareibiza.com",
-    "telephone": "",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Carrer d'Albacete 5",
       "addressLocality": "Sant Antoni de Portmany",
       "postalCode": "07829",
-      "addressCountry": "ES",
-      "addressRegion": "Ibiza"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "38.9798",
-      "longitude": "1.3020"
+      "addressCountry": "ES"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -61,29 +41,26 @@
         "closes": "19:00"
       }
     ],
-    "priceRange": "€€",
-    "sameAs": ["https://www.instagram.com/celiacareibiza/"]
+    "priceRange": "€€"
   }
   </script>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
-  <header class="site-header" id="site-header" role="banner">
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
     <div class="header-inner">
-      <a href="#" class="logo" aria-label="Celia Care Ibiza – Home">
+      <a href="#" class="logo" aria-label="Celia Care Ibiza">
         <span class="logo-main">Celia Care</span>
         <span class="logo-sub">Ibiza</span>
       </a>
 
-      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#about"      data-i18n="nav.about">About</a></li>
           <li><a href="#treatments" data-i18n="nav.treatments">Treatments</a></li>
@@ -94,30 +71,24 @@
       </nav>
 
       <div class="header-actions">
-        <!-- Business status indicator -->
         <div class="business-status" id="businessStatus" aria-live="polite">
           <span class="status-dot" id="statusDot"></span>
           <span class="status-text" id="statusText"></span>
         </div>
-
-        <!-- Language toggle -->
         <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
           <span class="lang-opt" id="langEs">ES</span>
           <span class="lang-divider">|</span>
           <span class="lang-opt" id="langEn">EN</span>
         </button>
-
         <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta" data-i18n="cta.book">Book Now</a>
       </div>
 
-      <!-- Hamburger -->
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile nav -->
-    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
       <ul>
         <li><a href="#about"      data-i18n="nav.about"      class="mobile-link">About</a></li>
         <li><a href="#treatments" data-i18n="nav.treatments" class="mobile-link">Treatments</a></li>
@@ -125,56 +96,42 @@
         <li><a href="#reviews"    data-i18n="nav.reviews"    class="mobile-link">Reviews</a></li>
         <li><a href="#contact"    data-i18n="nav.contact"    class="mobile-link">Contact</a></li>
       </ul>
-      <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary mobile-cta" data-i18n="cta.book">Book Now</a>
+      <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="cta.book">Book Now</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-    <section class="hero" id="home" aria-label="Hero section — serene wellness sanctuary in Ibiza with warm Mediterranean light">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero">
       <div class="hero-overlay"></div>
-
-      <!-- Decorative organic shape -->
-      <div class="hero-shape" aria-hidden="true">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M44.7,-76.4C58.4,-69.8,70.1,-58.5,77.8,-44.9C85.5,-31.3,89.2,-15.6,87.8,-0.8C86.4,14,80,28.1,71.4,40.2C62.8,52.3,52,62.5,39.3,69.9C26.5,77.3,11.8,81.8,-2.7,85.8C-17.1,89.7,-34.3,93.1,-47.6,86.7C-60.9,80.4,-70.3,64.3,-76.5,48C-82.7,31.6,-85.6,14.9,-83.8,-0.9C-82,-16.6,-75.5,-32.2,-66.4,-45.6C-57.4,-59,-45.7,-70.2,-32.3,-77C-18.9,-83.7,-3.8,-86.1,10.1,-83.5C24,-80.9,31.1,-82.9,44.7,-76.4Z" transform="translate(100 100)" />
-        </svg>
-      </div>
-
       <div class="hero-content">
-        <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Sant Antoni de Portmany · Ibiza</p>
-        <h1 class="hero-title reveal" data-i18n="hero.title">Your moment of<br><em>calm in Ibiza</em></h1>
-        <p class="hero-subtitle reveal" data-i18n="hero.subtitle">Massages, facial rituals and physiotherapy<br>in the heart of Sant Antoni. Book in minutes.</p>
-        <div class="hero-actions reveal">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Sant Antoni de Portmany · Ibiza</p>
+        <h1 class="hero-title" data-i18n="hero.title">Your moment of<br><em>calm in Ibiza</em></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Massages, facial rituals and physiotherapy<br>in the heart of Sant Antoni. Book in minutes.</p>
+        <div class="hero-actions">
           <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-hero-primary" data-i18n="cta.book">Book Now</a>
           <a href="#treatments" class="btn btn-hero-ghost" data-i18n="cta.treatments">Our Treatments</a>
         </div>
-        <div class="hero-badge reveal" aria-label="5 star rating on Fresha">
+        <div class="hero-badge" aria-label="5 star rating on Fresha">
           <span class="badge-stars">★★★★★</span>
           <span class="badge-text">5.0 · Fresha · <span data-i18n="badge.recommend">100% recommended</span></span>
         </div>
       </div>
-
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-line"></div>
-      </div>
+      <div class="scroll-indicator" aria-hidden="true"><div class="scroll-line"></div></div>
     </section>
 
-    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <!-- ABOUT -->
     <section class="about" id="about" aria-labelledby="about-heading">
       <div class="about-inner container">
-
         <div class="about-text reveal">
           <span class="section-label" data-i18n="about.label">Our Story</span>
           <h2 id="about-heading" class="section-title" data-i18n="about.title">A wellness<br>sanctuary in<br><em>Sant Antoni</em></h2>
-          <div class="title-line" aria-hidden="true"></div>
+          <div class="title-line"></div>
           <p data-i18n="about.body">At Celia Care Ibiza we believe wellness is a ritual. Our specialists combine massage techniques, facial rituals and physiotherapy to restore the balance that Ibiza sometimes takes away.</p>
           <p data-i18n="about.body2">Every session is crafted around you — your needs, your rhythm, your recovery. We hold space for genuine transformation in the middle of the island's beautiful energy.</p>
           <a href="#treatments" class="btn btn-outline" data-i18n="about.cta">Explore Treatments</a>
         </div>
-
         <div class="about-stats reveal">
           <div class="stat-card stat-card--accent">
             <span class="stat-value">★ 5.0</span>
@@ -193,48 +150,32 @@
             <span class="stat-label" data-i18n="stat.therapist">Lead Therapist</span>
           </div>
           <div class="stat-card stat-card--warm">
-            <span class="stat-value">< 2 min</span>
+            <span class="stat-value">&lt; 2 min</span>
             <span class="stat-label" data-i18n="stat.booking">to Book</span>
           </div>
         </div>
-
-      </div>
-
-      <!-- Decorative botanical element -->
-      <div class="about-deco" aria-hidden="true">
-        <svg viewBox="0 0 120 400" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path d="M60 400 Q20 300 40 200 Q60 100 30 0" stroke="#7D9B76" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.4"/>
-          <ellipse cx="40" cy="120" rx="28" ry="18" transform="rotate(-20 40 120)" fill="#7D9B76" opacity="0.12"/>
-          <ellipse cx="65" cy="200" rx="22" ry="15" transform="rotate(25 65 200)" fill="#C4735A" opacity="0.1"/>
-          <ellipse cx="38" cy="290" rx="30" ry="20" transform="rotate(-15 38 290)" fill="#7D9B76" opacity="0.1"/>
-        </svg>
       </div>
     </section>
 
-    <!-- ═══════════════════════════ TREATMENTS ═══════════════════════════ -->
+    <!-- TREATMENTS -->
     <section class="treatments" id="treatments" aria-labelledby="treatments-heading">
       <div class="treatments-header container reveal">
         <span class="section-label" data-i18n="treatments.label">What We Offer</span>
         <h2 id="treatments-heading" class="section-title" data-i18n="treatments.title">Our Treatments</h2>
-        <div class="title-line" aria-hidden="true"></div>
+        <div class="title-line"></div>
         <p class="section-intro" data-i18n="treatments.intro">Each session is a carefully designed ritual — a pause between the pulse of Ibiza and your inner stillness.</p>
       </div>
 
-      <!-- Treatment 1: Massage – image left -->
       <article class="treatment-row treatment-row--normal" aria-labelledby="t1-heading">
         <div class="treatment-image reveal">
           <div class="treatment-img-wrap">
-            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80&auto=format&fit=crop" alt="Professional therapeutic massage session in a serene Ibiza wellness room" loading="lazy" width="800" height="600" />
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80&auto=format&fit=crop" alt="Therapeutic massage at Celia Care Ibiza" loading="lazy" width="800" height="600" />
           </div>
-          <div class="treatment-img-badge" aria-hidden="true">
-            <span>I</span>
-          </div>
+          <div class="treatment-img-badge" aria-hidden="true"><span>I</span></div>
         </div>
         <div class="treatment-content reveal">
           <span class="treatment-label" data-i18n="t1.label">Body · Relax</span>
-          <h3 id="t1-heading" class="treatment-title">
-            <span data-i18n="t1.title">Therapeutic Massage</span>
-          </h3>
+          <h3 id="t1-heading" class="treatment-title" data-i18n="t1.title">Therapeutic Massage</h3>
           <p data-i18n="t1.desc">Relieve deep muscle tension and recover your vital energy. Our therapeutic massage uses professional techniques to release the accumulated stress of Ibiza's vibrant rhythm.</p>
           <ul class="treatment-prices" aria-label="Prices">
             <li><span data-i18n="t1.p1">20 min</span><span>20€</span></li>
@@ -244,21 +185,16 @@
         </div>
       </article>
 
-      <!-- Treatment 2: Facial – image right -->
       <article class="treatment-row treatment-row--reversed treatment-row--alt" aria-labelledby="t2-heading">
         <div class="treatment-image reveal">
           <div class="treatment-img-wrap">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&auto=format&fit=crop" alt="Luxurious facial glow ritual treatment at Celia Care Ibiza" loading="lazy" width="800" height="600" />
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&auto=format&fit=crop" alt="Facial glow ritual at Celia Care Ibiza" loading="lazy" width="800" height="600" />
           </div>
-          <div class="treatment-img-badge treatment-img-badge--light" aria-hidden="true">
-            <span>II</span>
-          </div>
+          <div class="treatment-img-badge treatment-img-badge--light" aria-hidden="true"><span>II</span></div>
         </div>
         <div class="treatment-content reveal">
           <span class="treatment-label" data-i18n="t2.label">Face · Glow</span>
-          <h3 id="t2-heading" class="treatment-title">
-            <span data-i18n="t2.title">Facial Glow Ritual</span>
-          </h3>
+          <h3 id="t2-heading" class="treatment-title" data-i18n="t2.title">Facial Glow Ritual</h3>
           <p data-i18n="t2.desc">A luminosity ritual designed for your skin's unique needs. We combine deep cleansing, hydration and sculpting techniques to reveal a radiant, renewed complexion touched by the Mediterranean sun.</p>
           <ul class="treatment-prices" aria-label="Prices">
             <li><span data-i18n="t2.p1">60 min</span><span>55€</span></li>
@@ -268,21 +204,16 @@
         </div>
       </article>
 
-      <!-- Treatment 3: Physio – image left, bg change -->
       <article class="treatment-row treatment-row--normal treatment-row--dark" aria-labelledby="t3-heading">
         <div class="treatment-image reveal">
           <div class="treatment-img-wrap">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format&fit=crop" alt="Professional physiotherapy and osteopathy session" loading="lazy" width="800" height="600" />
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format&fit=crop" alt="Physiotherapy session at Celia Care Ibiza" loading="lazy" width="800" height="600" />
           </div>
-          <div class="treatment-img-badge treatment-img-badge--sage" aria-hidden="true">
-            <span>III</span>
-          </div>
+          <div class="treatment-img-badge treatment-img-badge--sage" aria-hidden="true"><span>III</span></div>
         </div>
         <div class="treatment-content reveal">
           <span class="treatment-label" data-i18n="t3.label">Recovery · Expert</span>
-          <h3 id="t3-heading" class="treatment-title">
-            <span data-i18n="t3.title">Physiotherapy &amp; Osteopathy</span>
-          </h3>
+          <h3 id="t3-heading" class="treatment-title" data-i18n="t3.title">Physiotherapy &amp; Osteopathy</h3>
           <p data-i18n="t3.desc">Professional recovery in expert hands. Our physiotherapy and osteopathy sessions address chronic pain, postural imbalances and sports recovery — helping you move freely again.</p>
           <ul class="treatment-prices" aria-label="Prices">
             <li><span data-i18n="t3.p1">60 min</span><span>130€</span></li>
@@ -291,21 +222,16 @@
         </div>
       </article>
 
-      <!-- Treatment 4: Holistic – image right -->
       <article class="treatment-row treatment-row--reversed" aria-labelledby="t4-heading">
         <div class="treatment-image reveal">
           <div class="treatment-img-wrap">
-            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80&auto=format&fit=crop" alt="Holistic wellness and chakra balancing session in Ibiza" loading="lazy" width="800" height="600" />
+            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80&auto=format&fit=crop" alt="Holistic wellness session at Celia Care Ibiza" loading="lazy" width="800" height="600" />
           </div>
-          <div class="treatment-img-badge" aria-hidden="true">
-            <span>IV</span>
-          </div>
+          <div class="treatment-img-badge" aria-hidden="true"><span>IV</span></div>
         </div>
         <div class="treatment-content reveal">
           <span class="treatment-label" data-i18n="t4.label">Mind · Spirit</span>
-          <h3 id="t4-heading" class="treatment-title">
-            <span data-i18n="t4.title">Holistic Wellness</span>
-          </h3>
+          <h3 id="t4-heading" class="treatment-title" data-i18n="t4.title">Holistic Wellness</h3>
           <p data-i18n="t4.desc">Align your chakras and reconnect with your body's natural wisdom. Our holistic wellness sessions integrate breathwork, energy healing and mindful touch to guide you toward profound inner balance.</p>
           <ul class="treatment-prices treatment-prices--enquire" aria-label="Pricing">
             <li><span data-i18n="t4.price">Personalised · Enquire</span></li>
@@ -315,21 +241,19 @@
       </article>
     </section>
 
-    <!-- ═══════════════════════════ TEAM ═══════════════════════════ -->
+    <!-- TEAM -->
     <section class="team" id="team" aria-labelledby="team-heading">
       <div class="team-inner container">
         <div class="team-header reveal">
           <span class="section-label" data-i18n="team.label">The People</span>
           <h2 id="team-heading" class="section-title" data-i18n="team.title">Meet Your Therapists</h2>
-          <div class="title-line" aria-hidden="true"></div>
-          <p class="section-intro" data-i18n="team.intro">Behind every session is a professional who genuinely cares about your wellbeing. We bring expertise, warmth and intention to every touch.</p>
+          <div class="title-line"></div>
+          <p class="section-intro" data-i18n="team.intro">Behind every session is a professional who genuinely cares about your wellbeing.</p>
         </div>
-
         <div class="team-grid">
-          <!-- Andry -->
           <div class="team-card reveal">
             <div class="team-photo-wrap">
-              <div class="team-photo-circle" role="img" aria-label="Andry, Lead Massage Therapist at Celia Care Ibiza">
+              <div class="team-photo-circle" role="img" aria-label="Andry, Lead Massage Therapist">
                 <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80&auto=format&fit=crop&crop=face" alt="Andry, Lead Massage Therapist" loading="lazy" width="400" height="400" />
               </div>
               <div class="team-photo-badge" aria-hidden="true">★ 5.0</div>
@@ -338,17 +262,15 @@
               <h3 class="team-name">Andry</h3>
               <p class="team-role" data-i18n="team.andry.role">Lead Massage Therapist</p>
               <div class="team-divider" aria-hidden="true"></div>
-              <p class="team-bio" data-i18n="team.andry.bio">Professionalism and dedication in every single session. Andry brings years of therapeutic expertise and a genuine passion for holistic healing — his hands-on approach has earned him a flawless 5-star reputation across all treatments.</p>
+              <p class="team-bio" data-i18n="team.andry.bio">Professionalism and dedication in every single session. Andry brings years of therapeutic expertise and a genuine passion for holistic healing.</p>
             </div>
           </div>
-
-          <!-- Team collective -->
           <div class="team-card team-card--collective reveal">
             <div class="team-collective-visual" aria-hidden="true">
               <div class="collective-ring collective-ring--1"></div>
               <div class="collective-ring collective-ring--2"></div>
               <div class="collective-icon">
-                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none">
                   <circle cx="28" cy="30" r="14" fill="#C4735A" opacity="0.3"/>
                   <circle cx="52" cy="30" r="14" fill="#7D9B76" opacity="0.3"/>
                   <circle cx="40" cy="50" r="14" fill="#C4735A" opacity="0.25"/>
@@ -362,7 +284,7 @@
               <h3 class="team-name" data-i18n="team.collective.name">Celia Care Team</h3>
               <p class="team-role" data-i18n="team.collective.role">Wellness Specialists</p>
               <div class="team-divider" aria-hidden="true"></div>
-              <p class="team-bio" data-i18n="team.collective.bio">Our collective of wellness specialists brings diverse techniques and a shared commitment to your transformation. From facials to physiotherapy, every member of our team is selected for their expertise and their empathy.</p>
+              <p class="team-bio" data-i18n="team.collective.bio">Our collective of wellness specialists brings diverse techniques and a shared commitment to your transformation.</p>
               <div class="team-tags">
                 <span data-i18n="tag.massage">Massage</span>
                 <span data-i18n="tag.facial">Facial</span>
@@ -375,127 +297,90 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════ REVIEWS ═══════════════════════════ -->
+    <!-- REVIEWS -->
     <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
       <div class="reviews-header container reveal">
         <span class="section-label" data-i18n="reviews.label">What Our Clients Say</span>
         <h2 id="reviews-heading" class="section-title" data-i18n="reviews.title">Real Experiences</h2>
-        <div class="title-line" aria-hidden="true"></div>
+        <div class="title-line"></div>
         <div class="reviews-meta">
-          <span class="reviews-stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <span class="reviews-stars" aria-label="5 stars">★★★★★</span>
           <span class="reviews-score">5.0</span>
           <span class="reviews-count" data-i18n="reviews.count">17 reviews on Fresha</span>
         </div>
       </div>
-
-      <div class="carousel-wrap" role="region" aria-label="Client testimonials carousel">
+      <div class="carousel-wrap" role="region" aria-label="Client testimonials">
         <div class="carousel" id="carousel">
-          <!-- Review 1 -->
-          <article class="review-card" role="article" aria-label="Review by Ferdinand T.">
+          <article class="review-card">
             <div class="review-stars" aria-label="5 stars">★★★★★</div>
-            <blockquote>
-              <p class="review-text" data-i18n="review1.text">"One of the best massages I've had in a while! The whole booking process was super easy and well organized."</p>
-            </blockquote>
+            <blockquote><p class="review-text" data-i18n="review1.text">"One of the best massages I've had in a while! The whole booking process was super easy and well organized."</p></blockquote>
             <footer class="review-author">
               <div class="review-avatar" aria-hidden="true">F</div>
-              <div>
-                <cite class="review-name">Ferdinand T.</cite>
-                <span class="review-via" data-i18n="review.via">via Fresha</span>
-              </div>
+              <div><cite class="review-name">Ferdinand T.</cite><span class="review-via" data-i18n="review.via">via Fresha</span></div>
             </footer>
           </article>
-
-          <!-- Review 2 -->
-          <article class="review-card" role="article" aria-label="Review by Andrew S.">
+          <article class="review-card">
             <div class="review-stars" aria-label="5 stars">★★★★★</div>
-            <blockquote>
-              <p class="review-text" data-i18n="review2.text">"Amazing experience. Lovely team. Massage was excellent and felt relaxed, chakras aligned and all my aches were relieved."</p>
-            </blockquote>
+            <blockquote><p class="review-text" data-i18n="review2.text">"Amazing experience. Lovely team. Massage was excellent and felt relaxed, chakras aligned and all my aches were relieved."</p></blockquote>
             <footer class="review-author">
               <div class="review-avatar" aria-hidden="true">A</div>
-              <div>
-                <cite class="review-name">Andrew S.</cite>
-                <span class="review-via" data-i18n="review.via">via Fresha</span>
-              </div>
+              <div><cite class="review-name">Andrew S.</cite><span class="review-via" data-i18n="review.via">via Fresha</span></div>
             </footer>
           </article>
-
-          <!-- Review 3 -->
-          <article class="review-card" role="article" aria-label="Review by Andrew H.">
+          <article class="review-card">
             <div class="review-stars" aria-label="5 stars">★★★★★</div>
-            <blockquote>
-              <p class="review-text" data-i18n="review3.text">"Lovely place, definitely recommend. A true hidden gem in the heart of Sant Antoni — exactly what I needed after a long week."</p>
-            </blockquote>
+            <blockquote><p class="review-text" data-i18n="review3.text">"Lovely place, definitely recommend. A true hidden gem in the heart of Sant Antoni."</p></blockquote>
             <footer class="review-author">
               <div class="review-avatar" aria-hidden="true">A</div>
-              <div>
-                <cite class="review-name">Andrew H.</cite>
-                <span class="review-via" data-i18n="review.via">via Fresha</span>
-              </div>
+              <div><cite class="review-name">Andrew H.</cite><span class="review-via" data-i18n="review.via">via Fresha</span></div>
             </footer>
           </article>
-
-          <!-- Review 4 -->
-          <article class="review-card" role="article" aria-label="Review by Maureen B.">
+          <article class="review-card">
             <div class="review-stars" aria-label="5 stars">★★★★★</div>
-            <blockquote>
-              <p class="review-text" data-i18n="review4.text">"Thoroughly enjoyed my massage and facial. The atmosphere was calm and peaceful, and the therapist was incredibly professional."</p>
-            </blockquote>
+            <blockquote><p class="review-text" data-i18n="review4.text">"Thoroughly enjoyed my massage and facial. The atmosphere was calm and peaceful, and the therapist was incredibly professional."</p></blockquote>
             <footer class="review-author">
               <div class="review-avatar" aria-hidden="true">M</div>
-              <div>
-                <cite class="review-name">Maureen B.</cite>
-                <span class="review-via" data-i18n="review.via">via Fresha</span>
-              </div>
+              <div><cite class="review-name">Maureen B.</cite><span class="review-via" data-i18n="review.via">via Fresha</span></div>
             </footer>
           </article>
         </div>
-
-        <!-- Carousel controls -->
         <div class="carousel-controls" aria-label="Carousel navigation">
           <button class="carousel-btn" id="carouselPrev" aria-label="Previous review">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
-          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Testimonials"></div>
+          <div class="carousel-dots" id="carouselDots" role="tablist"></div>
           <button class="carousel-btn" id="carouselNext" aria-label="Next review">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════ HOURS ═══════════════════════════ -->
+    <!-- HOURS -->
     <section class="hours" id="hours" aria-labelledby="hours-heading">
       <div class="hours-inner container">
         <div class="hours-content reveal">
           <span class="section-label" data-i18n="hours.label">When to Visit</span>
           <h2 id="hours-heading" class="section-title" data-i18n="hours.title">Opening Hours</h2>
-          <div class="title-line" aria-hidden="true"></div>
+          <div class="title-line"></div>
           <p class="hours-note" data-i18n="hours.note">Advance booking recommended to ensure availability.</p>
-
           <div class="hours-live" id="hoursLive" aria-live="polite">
             <span class="hours-status-dot" id="hoursStatusDot"></span>
             <span class="hours-status-text" id="hoursStatusText"></span>
           </div>
-
           <table class="hours-table" aria-label="Weekly opening hours">
-            <tbody id="hoursTable">
-              <!-- populated by JS -->
-            </tbody>
+            <tbody id="hoursTable"></tbody>
           </table>
         </div>
-
         <div class="hours-deco reveal" aria-hidden="true">
           <div class="hours-circle">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <circle cx="100" cy="100" r="90" fill="none" stroke="#C4735A" stroke-width="1" opacity="0.2"/>
               <circle cx="100" cy="100" r="70" fill="none" stroke="#7D9B76" stroke-width="1" opacity="0.15"/>
               <circle cx="100" cy="100" r="50" fill="#C4735A" opacity="0.06"/>
-              <!-- Clock hands -->
               <line x1="100" y1="100" x2="100" y2="30" stroke="#C4735A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
               <line x1="100" y1="100" x2="145" y2="100" stroke="#8B4A35" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
               <circle cx="100" cy="100" r="4" fill="#C4735A" opacity="0.8"/>
-              <!-- Hour marks -->
               <line x1="100" y1="12" x2="100" y2="22" stroke="#C4735A" stroke-width="2" opacity="0.4"/>
               <line x1="188" y1="100" x2="178" y2="100" stroke="#C4735A" stroke-width="2" opacity="0.4"/>
               <line x1="100" y1="188" x2="100" y2="178" stroke="#C4735A" stroke-width="2" opacity="0.4"/>
@@ -507,7 +392,7 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════ CTA FINAL ═══════════════════════════ -->
+    <!-- CTA FINAL -->
     <section class="cta-final" aria-labelledby="cta-heading">
       <div class="cta-final-inner container">
         <div class="cta-final-content reveal">
@@ -519,81 +404,59 @@
         <div class="cta-final-deco" aria-hidden="true">
           <div class="cta-circle cta-circle--1"></div>
           <div class="cta-circle cta-circle--2"></div>
-          <svg class="cta-leaf" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <path d="M60 200 Q10 130 20 70 Q30 10 60 5 Q90 10 100 70 Q110 130 60 200Z" fill="#FBF6F0" opacity="0.07"/>
-          </svg>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <div class="contact-inner container">
-
         <div class="contact-info reveal">
           <span class="section-label" data-i18n="contact.label">Find Us</span>
-          <h2 id="contact-heading" class="section-title" data-i18n="contact.title">Come & Find Us</h2>
-          <div class="title-line" aria-hidden="true"></div>
-
+          <h2 id="contact-heading" class="section-title" data-i18n="contact.title">Come &amp; Find Us</h2>
+          <div class="title-line"></div>
           <address class="contact-address">
             <div class="contact-address-line">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               <span>Carrer d'Albacete 5<br>Sant Antoni de Portmany<br>07829, Ibiza</span>
             </div>
           </address>
-
           <div class="contact-booking">
             <p data-i18n="contact.bookingNote">Bookings are handled through our Fresha profile — the easiest way to secure your session.</p>
             <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="cta.book">Book Now</a>
           </div>
-
           <div class="contact-social">
-            <a href="https://www.instagram.com/celiacareibiza/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Celia Care Ibiza on Instagram">
+            <a href="https://www.instagram.com/celiacareibiza/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow on Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
               <span>@celiacareibiza</span>
             </a>
           </div>
-
-          <!-- Mini hours in contact -->
           <div class="contact-hours">
             <h3 data-i18n="contact.hours.title">Opening Hours</h3>
             <p data-i18n="contact.hours.weekdays"><strong>Monday – Saturday:</strong> 09:00 – 19:00</p>
             <p data-i18n="contact.hours.sunday"><strong>Sunday:</strong> Closed</p>
           </div>
         </div>
-
         <div class="contact-map reveal">
           <div class="map-wrap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.5!2d1.3020!3d38.9798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129942ab29b4f5b9%3A0x0!2sCarrer+d'Albacete+5%2C+Sant+Antoni+de+Portmany%2C+07829+Illes+Balears!5e0!3m2!1sen!2ses!4v1699999999!5m2!1sen!2ses"
-              width="100%"
-              height="400"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Celia Care Ibiza location on Google Maps"
-              aria-label="Map showing Celia Care Ibiza location at Carrer d'Albacete 5, Sant Antoni de Portmany, Ibiza"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.5!2d1.3020!3d38.9798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129942ab29b4f5b9%3A0x0!2sCarrer+d'Albacete+5%2C+Sant+Antoni+de+Portmany%2C+07829+Illes+Balears!5e0!3m2!1sen!2ses!4v1699999999!5m2!1sen!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Celia Care Ibiza on Google Maps"></iframe>
           </div>
         </div>
-
       </div>
     </section>
 
   </main>
 
-  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
-  <footer class="site-footer" role="contentinfo">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="footer-inner container">
       <div class="footer-brand">
-        <a href="#" class="logo" aria-label="Celia Care Ibiza – Back to top">
+        <a href="#" class="logo" aria-label="Celia Care Ibiza">
           <span class="logo-main">Celia Care</span>
           <span class="logo-sub">Ibiza</span>
         </a>
         <p class="footer-tagline" data-i18n="footer.tagline">Wellness · Massage · Physiotherapy<br>Sant Antoni de Portmany · Ibiza</p>
       </div>
-
       <div class="footer-links">
         <nav aria-label="Footer navigation">
           <ul>
@@ -605,15 +468,13 @@
           </ul>
         </nav>
       </div>
-
       <div class="footer-cta">
         <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="footer.cta">Book on Fresha</a>
         <a href="https://www.instagram.com/celiacareibiza/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
       </div>
     </div>
-
     <div class="footer-bottom">
       <div class="container">
         <p class="footer-copy" data-i18n="footer.copy">© 2025 Celia Care Ibiza · All rights reserved</p>
@@ -622,9 +483,8 @@
     </div>
   </footer>
 
-  <!-- Back to top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
   <script src="script.js"></script>

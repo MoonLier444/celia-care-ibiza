@@ -1640,6 +1640,22 @@ h1, h2, h3, h4 {
    RESPONSIVE · MOBILE < 768px
 ══════════════════════════════════════════════════════════ */
 @media (max-width: 767px) {
+  /* ── MOBILE SCROLL FIX: disable reveal animations entirely ── */
+  /* Root cause of blank sections: opacity:0 content not triggered by
+     IntersectionObserver fast enough on mobile. Show everything immediately. */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Hero on mobile: use reliable CSS gradient, no external image dependency */
+  .hero {
+    background-image: none !important;
+    background: linear-gradient(160deg, var(--terra-dark) 0%, var(--ink) 55%, #1a120b 100%) !important;
+  }
+
   .business-status { display: none; }
 
   .hero-title { font-size: clamp(2.6rem, 10vw, 3.5rem); }
